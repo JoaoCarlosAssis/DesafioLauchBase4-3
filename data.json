@@ -1,0 +1,21 @@
+{
+    "teachers": [{
+            "id": 1,
+            "name": "Joao Carlos",
+            "created_at": 1595023971199,
+            "birth": 1595023971199,
+            "schooling": "doutorado",
+            "type_of_class": "EAD",
+            "area": "Javascript, C#, C++"
+        },
+        {
+            "id": 2,
+            "name": "Joao Carlos",
+            "created_at": 1595023979271,
+            "birth": 1595023979271,
+            "schooling": "mestrado",
+            "type_of_class": "P",
+            "area": "Javascript, C#, C++"
+        }
+    ]
+}
