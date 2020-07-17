@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+{% block content %}
+  <form class="card" method="POST" action="/teachers">
+    <section class="avatar" style="background: url(https://source.unsplash.com/collection/10553730/500x500) no-repeat center center /cover"></section>
+    <section class="details">
+      <div class="item">
+        <div>Avatar URL</div>
+        <input type="url" name="avatar_utl" placeholder="https://">
+      </div>
+
+      <div class="item">
+        <div>Nome</div>
+        <input type="text" name="name" placeholder="Nome do Professor">
+      </div>
+
+      <div class="item">
+        <div>Data de nascimento</div>
+        <input type="date" name="birth">
+      </div>
+      <div class="item">
+        <div>Grau de escolaridade</div>
+        <select name="schooling">
+          <option value="value1">Ensino Médio Completo</option>
+          <option value="value2">Ensino Superior Completo</option>
+          <option value="value3">Mestrado</option>
+          <option value="value4">Doutorado</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <div>Tipo de aula</div>
+        <div class="check">
+          <input id="P"type="radio" name="type_of_class" value="P" checked>
+          <label for="P">Presencial</label>
+          <input id="EAD" type="radio" name="type_of_class" value="EAD">
+          <label class="label_position" for="EAD">À distância</label>
+
+        </div>
+      </div>
+      <div class="item">
+        <div>Area de atuação</div>
+        <input 
+        type="text" 
+        name="area"
+        placeholder="Separe a area de atuação por virgula"
+        >
+      </div>
+    <button type="submit">Salvar</button>
+    </section>
+  </form>
+{% endblock %}
